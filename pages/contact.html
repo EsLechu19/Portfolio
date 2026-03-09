@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - John Doe</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="profile-header">
+                <div class="profile-img">JD</div>
+                <div class="profile-info">
+                    <h3>John Doe</h3>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-user"></i> About Me</a></li>
+                    <li><a href="projects.html"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                    <li><a href="skills.html"><i class="fa-solid fa-gear"></i> Skills</a></li>
+                    <li class="active"><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="availability-badge">
+                <p>AVAILABLE FOR</p>
+                <span>Freelance / Full-time</span>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <p class="contact-sub">GET IN TOUCH</p>
+                <h2>Ready to start your next project?</h2>
+                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-actions">
+                    <a href="mailto:hello@example.com" class="btn btn-email"><i class="fa-solid fa-envelope"></i> Email Me</a>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

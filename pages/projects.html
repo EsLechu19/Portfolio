@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - John Doe</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="profile-header">
+                <div class="profile-img">JD</div>
+                <div class="profile-info">
+                    <h3>John Doe</h3>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-user"></i> About Me</a></li>
+                    <li class="active"><a href="projects.html"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                    <li><a href="skills.html"><i class="fa-solid fa-gear"></i> Skills</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="availability-badge">
+                <p>AVAILABLE FOR</p>
+                <span>Freelance / Full-time</span>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Projects Section -->
+            <section id="projects" class="projects">
+                <h2 class="section-number">02. Selected Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bbbda536ad8a?q=80&w=2070&auto=format&fit=crop" alt="Nexus Analytics Platform">
+                        </div>
+                        <div class="project-details">
+                            <h3>Nexus Analytics Platform</h3>
+                            <p>A real-time data visualization dashboard designed for SaaS enterprises to monitor key performance indicators with custom reporting tools.</p>
+                            <div class="project-tags">
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>D3.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="E-Flow Marketplace">
+                        </div>
+                        <div class="project-details">
+                            <h3>E-Flow Marketplace</h3>
+                            <p>High-performance e-commerce engine focusing on speed and accessibility, featuring a custom headless CMS integration.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>GraphQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
