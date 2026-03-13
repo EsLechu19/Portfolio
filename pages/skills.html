@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - John Doe</title>
+    <title>Skills - Esaú Lechuga</title>
     <link rel="stylesheet" href="../style.css">
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,10 +27,10 @@
         <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <div class="profile-header">
-                <div class="profile-img">JD</div>
+                <div class="profile-img">EL</div>
                 <div class="profile-info">
-                    <h3>John Doe</h3>
-                    <p>Software Engineer</p>
+                    <h3>Esaú Lechuga</h3>
+                    <p>Software Engineer Student</p>
                 </div>
             </div>
             <nav class="nav-menu">
@@ -53,31 +53,204 @@
             <!-- Skills Section -->
             <section id="skills" class="skills">
                 <h2 class="section-number">03. Technical Arsenal</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>HTML</h3>
-                        <p>Expert</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>CSS</h3>
-                        <p>Expert</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>JS</h3>
-                        <p>Advanced</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Java</h3>
-                        <p>Proficient</p>
+                
+                <!-- Skills Tabs -->
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="frontend">
+                        <i class="fa-solid fa-code"></i> Frontend
+                    </button>
+                    <button class="tab-btn" data-tab="backend">
+                        <i class="fa-solid fa-server"></i> Backend
+                    </button>
+                    <button class="tab-btn" data-tab="tools">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Tools
+                    </button>
+                </div>
+
+                <!-- Skills Content -->
+                 <!-- FRONTEND -->
+                <div class="tab-content active" id="frontend">
+                    <div class="skills-grid-new">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">HTML5</span>
+                                    <!-- <span class="skill-percentage">95%</span> -->
+                                </div>
+                                <!-- <span class="skill-level">MEDIUM</span> -->
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">CSS3 </span>
+                                    <!-- <span class="skill-percentage">90%</span> -->
+                                </div>
+                                <!-- <span class="skill-level">MEDIUM</span> -->
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">JavaScript</span>
+                                    <!-- <span class="skill-percentage">85%</span> -->
+                                </div>
+                                <!-- <span class="skill-level">BASIC</span> -->
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <span class="skill-level">ADVANCED</span>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <span class="skill-level">INTERMEDIATE</span>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Next.js</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <span class="skill-level">INTERMEDIATE</span>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="skills-list">
-                    <span>React</span>
-                    <span>Tailwind</span>
-                    <span>PostgreSQL</span>
-                    <span>Docker</span>
-                    <span>AWS</span>
-                    <span>Git</span>
+                <!-- BACKEND -->
+                <div class="tab-content" id="backend">
+                    <div class="skills-grid-new">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Java / Spring Boot</span>
+                                    <!-- <span class="skill-percentage">75%</span> -->
+                                </div>
+                                <!-- <span class="skill-level">ADVANCED</span> -->
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">MySQL / PostgreSQL</span>
+                                    <!-- <span class="skill-percentage">70%</span> -->
+                                </div>
+                                <!-- <span class="skill-level">ADVANCED</span> -->
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Node.js</span>
+                                    <!-- <span class="skill-percentage">60%</span> -->
+                                </div>
+                                <!-- <span class="skill-level">INTERMEDIATE</span> -->
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Python</span>
+                                    <!-- <span class="skill-percentage">55%</span> -->
+                                </div>
+                                <!-- <span class="skill-level">INTERMEDIATE</span> -->
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid-new">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Git / GitHub</span>
+                                    <!-- <span class="skill-percentage">85%</span> -->
+                                </div>
+                                <!-- <span class="skill-level">ADVANCED</span> -->
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-brands fa-docker"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <span class="skill-level">INTERMEDIATE</span>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-brands fa-aws"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">AWS</span>
+                                    <span class="skill-percentage">50%</span>
+                                </div>
+                                <span class="skill-level">BASIC</span>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
                 </div>
             </section>
         </main>

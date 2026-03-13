@@ -314,7 +314,7 @@ section {
 /* Projects Section */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
@@ -393,7 +393,136 @@ section {
     color: white;
 }
 
-/* Skills Section */
+/* Skills Tabs Styling */
+.skills-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.tab-btn {
+    padding: 10px 24px;
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tab-btn i {
+    font-size: 1rem;
+}
+
+.tab-btn:hover {
+    color: white;
+}
+
+.tab-btn.active {
+    background-color: var(--accent-blue);
+    color: white;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Skills Grid New */
+.skills-grid-new {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.skill-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.skill-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.skill-info {
+    flex: 1;
+}
+
+.skill-name-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.skill-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.skill-percentage {
+    color: var(--accent-blue);
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.skill-level {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.skill-bar-bg {
+    width: 100%;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, var(--accent-blue), var(--accent-cyan));
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+/* Skills Section Old Cards (keeping for compatibility or removing if not used) */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
