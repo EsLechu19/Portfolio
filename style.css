@@ -448,6 +448,10 @@ section {
     gap: 30px;
 }
 
+.skills-grid-two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .skill-item {
     display: flex;
     gap: 20px;
