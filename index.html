@@ -1,127 +1,293 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Esaú Lechuga</title>
+    <meta name="description" content="Portfolio of Esaú Lechuga — Software Engineer specializing in Java, Spring Boot, and Web Development.">
+    <title>Esaú Lechuga — Software Engineer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%233b82f6'>EL</text></svg>">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <!-- Loader -->
-    <div class="loader-container">
-        <div class="loader"></div>
-        <div class="loader-text">Loading...</div>
-    </div>
-    <!-- Mobile Menu Button -->
-    <button class="mobile-menu-btn" aria-label="Toggle Menu">
-        <i class="fa-solid fa-bars"></i>
-    </button>
+    <!-- Rain BG -->
+    <div class="container"></div>
 
-    <div class="app-container">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
-            <div class="profile-header">
-                <div class="profile-img">E</div>
-                <div class="profile-info">
-                    <h3>Esaú Lechuga</h3>
-                    <p>Software Engineer</p>
+    <!-- Loader -->
+    <div class="loader">
+            <div class="loader-content">
+                <div class="loader-ring"></div>
+                <p class="loader-text">Loading...</p>
+            </div>
+        </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="#home" class="navbar-brand">
+                <div class="avatar">EL</div>
+                <span class="navbar-name">Esaú Lechuga</span>
+            </a>
+            <nav class="navbar-nav">
+                <a href="#home" class="nav-link" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </nav>
+            <button class="mobile-trigger" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- HOME -->
+        <section id="home" class="section">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I am Esaú Lechuga</p>
+                    <h1 class="hero-title">Software <br><span class="gradient-text">Developer</span></h1>
+                    <div class="hero-badge">Available for Freelance / Full-time</div>
+                    <p class="hero-desc">
+                        Software Engineering student focused on Web Development.
+                        I build web applications using Java, Spring Boot, HTML, CSS and JavaScript, applying clean code
+                        principles and solid programming fundamentals.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" data-nav>
+                            View My Work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="btn btn-secondary">Download CV</a>
+                    </div>
                 </div>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="pages/about.html"><i class="fa-solid fa-user"></i> About Me</a></li>
-                    <li><a href="pages/projects.html"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
-                    <li><a href="pages/skills.html"><i class="fa-solid fa-gear"></i> Skills</a></li>
-                    <li><a href="pages/contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-                </ul>
-            </nav>
-            <div class="availability-badge">
-                <p>AVAILABLE FOR</p>
-                <span>Freelance / Full-time</span>
-            </div>
-        </aside>
+        </section>
 
-        <!-- Main Content Area -->
-        <main class="main-content">
-            <div class="hero-split-container">
-                <!-- Hero Section (Only this in index) -->
-                <section id="home" class="hero">
-                    <div class="hero-content">
-                        <p class="greeting">Hello, I am Esau Lechuga</p>
-                        <h1>Software <br><span class="gradient-text">Developer</span></h1>
-                        <p class="hero-description">
-                            Software Engineering student focused on Web Development.
-                            I build web applications using Java, Spring Boot, HTML, CSS and JavaScript, applying clean code
-                            principles and solid programming fundamentals.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="pages/projects.html" class="btn btn-primary">View My Work <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                            <a href="#" class="btn btn-secondary">Download CV</a>
-                        </div>
-                    </div>
-                </section>
-                <!-- Animation - Laptop -->
-                <section class="laptop-animation-section">
-                    <div class="container">
-                        <div class="macbook">
-                            <div class="macbook__topBord">
-                                <div class="macbook__display">
-                                    <div class="macbook__load"></div>
-                                </div>
-                            </div>
-                            <div class="macbook__underBord">
-                                <div class="macbook__keybord">
-                                    <div class="keybord">
-                                        <div class="keybord__touchbar"></div>
-                                        <ul class="keybord__keyBox">
-                                            <li class="keybord__key key--01"></li>
-                                            <li class="keybord__key key--02"></li>
-                                            <li class="keybord__key key--03"></li>
-                                            <li class="keybord__key key--04"></li>
-                                            <li class="keybord__key key--05"></li>
-                                            <li class="keybord__key key--06"></li>
-                                            <li class="keybord__key key--07"></li>
-                                            <li class="keybord__key key--08"></li>
-                                            <li class="keybord__key key--09"></li>
-                                            <li class="keybord__key key--10"></li>
-                                            <li class="keybord__key key--11"></li>
-                                            <li class="keybord__key key--12"></li>
-                                            <li class="keybord__key key--13"></li>
-                                        </ul>
-                                        <ul class="keybord__keyBox--under">
-                                            <li class="keybord__key key--14"></li>
-                                            <li class="keybord__key key--15"></li>
-                                            <li class="keybord__key key--16"></li>
-                                            <li class="keybord__key key--17"></li>
-                                            <li class="keybord__key key--18"></li>
-                                            <li class="keybord__key key--19"></li>
-                                            <li class="keybord__key key--20"></li>
-                                            <li class="keybord__key key--21"></li>
-                                            <li class="keybord__key key--22"></li>
-                                            <li class="keybord__key key--23"></li>
-                                            <li class="keybord__key key--24"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="about-layout">
+                <div class="about-image-wrap">
+                    <img src="img/About-me-img.jpeg" alt="Esaú Lechuga profile photograph">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-heading">
+                        <span class="section-num">01</span> About Me
+                    </h2>
+                    <p>Software Engineering student in 8th cycle, focused on building full-stack applications with <span class="highlight">Java, Spring Boot, Python, and JavaScript</span>.</p>
+                    <p>I develop projects that combine clean backend architecture with functional frontends using <span class="highlight">HTML, CSS, and Bootstrap</span>, applying the principles I've learned throughout my degree.</p>
+                    <p>Currently open to opportunities where I can contribute to real-world software while continuing to grow as a developer.</p>
+                </div>
             </div>
-        </main>
-    </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h2 class="section-heading">
+                <span class="section-num">02</span> Selected Projects
+            </h2>
+            <div class="project-grid">
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbbda536ad8a?q=80&w=2070&auto=format&fit=crop" alt="Nexus Analytics Platform" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Nexus Analytics Platform</h3>
+                        <p class="card-desc">A real-time data visualization dashboard designed for SaaS enterprises to monitor key performance indicators with custom reporting tools.</p>
+                        <div class="card-tags">
+                            <span class="chip">Next.js</span>
+                            <span class="chip">TypeScript</span>
+                            <span class="chip">D3.js</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" aria-label="View live demo"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="E-Flow Marketplace" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">E-Flow Marketplace</h3>
+                        <p class="card-desc">High-performance e-commerce engine focusing on speed and accessibility, featuring a custom headless CMS integration.</p>
+                        <div class="card-tags">
+                            <span class="chip">React</span>
+                            <span class="chip">Node.js</span>
+                            <span class="chip">GraphQL</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" aria-label="View live demo"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" alt="Smart Inventory System" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Smart Inventory System</h3>
+                        <p class="card-desc">Full-stack application for efficient warehouse management, featuring real-time stock tracking and automated reporting.</p>
+                        <div class="card-tags">
+                            <span class="chip">Java</span>
+                            <span class="chip">Spring Boot</span>
+                            <span class="chip">MySQL</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" aria-label="View live demo"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2 class="section-heading">
+                <span class="section-num">03</span> Technical Arsenal
+            </h2>
+            <div class="tabs" role="tablist">
+                <button class="tab active" role="tab" aria-selected="true" data-tab="frontend">
+                    <i class="fa-solid fa-code"></i> Frontend
+                </button>
+                <button class="tab" role="tab" aria-selected="false" data-tab="backend">
+                    <i class="fa-solid fa-server"></i> Backend
+                </button>
+                <button class="tab" role="tab" aria-selected="false" data-tab="tools">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> Tools
+                </button>
+            </div>
+
+            <div class="tab-panels">
+                <div class="tab-panel active" id="panel-frontend" role="tabpanel">
+                    <div class="skills-list">
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                                <span class="skill-pct">60%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 60%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="panel-backend" role="tabpanel">
+                    <div class="skills-list">
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-brands fa-java"></i> Java / Spring Boot</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                                <span class="skill-pct">55%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 55%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-solid fa-database"></i> MySQL / PostgreSQL</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-solid fa-cloud"></i> REST APIs</span>
+                                <span class="skill-pct">65%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                                <span class="skill-pct">45%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 45%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="panel-tools" role="tabpanel">
+                    <div class="skills-list">
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-solid fa-terminal"></i> Linux / Terminal</span>
+                                <span class="skill-pct">60%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 60%"></div></div>
+                        </div>
+                        <div class="skill" data-reveal>
+                            <div class="skill-head">
+                                <span class="skill-name"><i class="fa-solid fa-sitemap"></i> Data Structures & Algorithms</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-track"><div class="skill-fill" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="contact-layout">
+                <p class="contact-kicker">GET IN TOUCH</p>
+                <h2 class="contact-headline">Ready to start your next project?</h2>
+                <p class="contact-desc">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-actions">
+                    <a href="mailto:hello@example.com" class="btn btn-email">
+                        <i class="fa-solid fa-envelope"></i> Email Me
+                    </a>
+                    <div class="contact-social">
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <script src="script.js"></script>
 </body>
-
 </html>
