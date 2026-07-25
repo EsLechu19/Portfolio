@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-25T08:58:14.7318459-05:00",
+  "title": "Design System: Esaú Lechuga — Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "space-deep": {
+        "role": "neutral",
+        "displayName": "Space Deep",
+        "canonical": "#0b0721",
+        "tonalRamp": ["#050210", "#080418", "#0b0721", "#0e0a2a", "#110d33", "#14103c", "#171345", "#1a164e"]
+      },
+      "indigo-surface": {
+        "role": "neutral",
+        "displayName": "Indigo Surface",
+        "canonical": "#0d0b3a",
+        "tonalRamp": ["#06051c", "#09072b", "#0d0b3a", "#110f49", "#151358", "#191767", "#1d1b76", "#211f85"]
+      },
+      "indigo-active": {
+        "role": "neutral",
+        "displayName": "Indigo Active",
+        "canonical": "#21197a",
+        "tonalRamp": ["#0f0b38", "#181257", "#21197a", "#2a209d", "#3327c0", "#443cd0", "#5c55d8", "#7470e0"]
+      },
+      "navy-card": {
+        "role": "neutral",
+        "displayName": "Navy Card",
+        "canonical": "#15104d",
+        "tonalRamp": ["#090624", "#0e0b36", "#15104d", "#1c1564", "#231a7b", "#2a1f92", "#3124a9", "#3829c0"]
+      },
+      "navy-card-hover": {
+        "role": "neutral",
+        "displayName": "Navy Card Hover",
+        "canonical": "#1e186b",
+        "tonalRamp": ["#0e0b32", "#161150", "#1e186b", "#261f86", "#2e26a1", "#362dbc", "#3e34d7", "#464be2"]
+      },
+      "neon-blue": {
+        "role": "primary",
+        "displayName": "Neon Blue",
+        "canonical": "#3b82f6",
+        "tonalRamp": ["#0a2d6a", "#144ca8", "#3b82f6", "#5a9af8", "#79b2fa", "#98cafb", "#b7e2fd", "#d6f0fe"]
+      },
+      "aurora-cyan": {
+        "role": "secondary",
+        "displayName": "Aurora Cyan",
+        "canonical": "#22d3ee",
+        "tonalRamp": ["#074a56", "#0e7f93", "#22d3ee", "#4ddcf1", "#78e5f5", "#a3eef9", "#cef6fc", "#e6fbfe"]
+      },
+      "solar-yellow": {
+        "role": "tertiary",
+        "displayName": "Solar Yellow",
+        "canonical": "#facc15",
+        "tonalRamp": ["#3d3204", "#8a7209", "#facc15", "#fbd644", "#fce073", "#fdea95", "#fef3be", "#fff9df"]
+      },
+      "mint-green": {
+        "role": "tertiary",
+        "displayName": "Mint Green",
+        "canonical": "#4ade80",
+        "tonalRamp": ["#0f4226", "#208a4a", "#4ade80", "#6ee49a", "#92eab4", "#b6f0ce", "#daf6e8", "#edfbf4"]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "Text Primary",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#666666", "#999999", "#cccccc", "#e6e6e6", "#f2f2f2", "#fafafa", "#ffffff", "#ffffff"]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Text Muted",
+        "canonical": "#a0a0c0",
+        "tonalRamp": ["#4a4a5c", "#6a6a82", "#80809e", "#a0a0c0", "#b8b8d0", "#d0d0e0", "#e8e8f0", "#f4f4f8"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only. The single largest statement on the page." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles (e.g. '01. Selected Projects')." },
+      "title": { "displayName": "Title", "purpose": "Card titles inside project cards." },
+      "body": { "displayName": "Body", "purpose": "Primary reading text across all sections." },
+      "label": { "displayName": "Label", "purpose": "Small uppercase text for badges and metadata." }
+    },
+    "shadows": [
+      { "name": "mobile-sidebar-overlay", "value": "10px 0 30px rgba(0,0,0,0.5)", "purpose": "Off-canvas sidebar backdrop on ≤768px screens." },
+      { "name": "about-image-lift", "value": "0 20px 40px rgba(0,0,0,0.4)", "purpose": "Shadow under the about page profile image." },
+      { "name": "tab-active-glow", "value": "0 4px 15px rgba(59, 130, 246, 0.3)", "purpose": "Subtle glow under the active skills tab." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default easing for state transitions (hover, focus, sidebar toggle)." },
+      { "name": "duration-hover", "value": "0.3s", "purpose": "State change transitions (button hover, card hover, nav hover)." },
+      { "name": "duration-reveal", "value": "0.6s", "purpose": "Scroll-reveal entrance animation." },
+      { "name": "duration-loader-fade", "value": "0.5s", "purpose": "Loader dismiss fade-out." },
+      { "name": "duration-loader-spin", "value": "2s", "purpose": "Loader spinner rotation cycle." },
+      { "name": "ease-reveal", "value": "ease-out", "purpose": "Easing for scroll-reveal entrance." }
+    ],
+    "breakpoints": [
+      { "name": "desktop", "value": "1201px", "purpose": "Full layout: two-column hero split, sidebar at 260px." },
+      { "name": "tablet", "value": "1025px - 1200px", "purpose": "Collapsed sidebar (80px icon-only), single-column hero." },
+      { "name": "mobile", "value": "768px", "purpose": "Off-canvas sidebar, reduced padding and type sizes." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action button — used for 'View My Work' CTA.",
+      "html": "<button class=\"ds-btn-primary\">View My Work <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/><polyline points=\"12 5 19 12 12 19\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 10px; background: #3b82f6; color: #fff; padding: 14px 28px; border: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.95rem; text-decoration: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; } .ds-btn-primary:hover { background: #2563eb; transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary action — used for 'Download CV'.",
+      "html": "<button class=\"ds-btn-secondary\">Download CV</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.05); color: #fff; padding: 14px 28px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.95rem; text-decoration: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; } .ds-btn-secondary:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); } .ds-btn-secondary:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Nav Item",
+      "kind": "nav",
+      "refersTo": "nav-item",
+      "description": "Sidebar navigation link — icon + label.",
+      "html": "<nav><a class=\"ds-nav-item\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/><polyline points=\"9 22 9 12 15 12 15 22\"/></svg><span>Home</span></a><a class=\"ds-nav-item ds-nav-item--active\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg><span>About Me</span></a></nav>",
+      "css": ".ds-nav-item { display: flex; align-items: center; gap: 15px; padding: 12px 20px; border-radius: 8px; color: #a0a0c0; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 500; transition: all 0.3s ease; } .ds-nav-item:hover, .ds-nav-item--active { background: #21197a; color: #fff; } .ds-nav-item:focus-visible { outline: 2px solid #3b82f6; outline-offset: 2px; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Project showcase card with image, title, description, tags, and links.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-image\"><div style=\"width:100%;height:100%;background:linear-gradient(135deg,#3b82f6,#22d3ee)\"></div></div><div class=\"ds-card-body\"><h3 class=\"ds-card-title\">Project Title</h3><p class=\"ds-card-desc\">Brief project description highlighting key features and technologies used.</p><div class=\"ds-card-tags\"><span class=\"ds-chip\">React</span><span class=\"ds-chip\">Node.js</span><span class=\"ds-chip\">TypeScript</span></div><div class=\"ds-card-links\"><a href=\"#\" class=\"ds-card-link\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"/><path d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"/></svg></a></div></div></div>",
+      "css": ".ds-card { background: #15104d; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; } .ds-card:hover { background: #1e186b; transform: translateY(-10px); border-color: rgba(255,255,255,0.1); } .ds-card-image { height: 240px; overflow: hidden; } .ds-card-body { padding: 25px; } .ds-card-title { font-family: 'Inter', sans-serif; font-size: 1.4rem; font-weight: 700; color: #fff; margin: 0 0 12px 0; } .ds-card-desc { font-family: 'Inter', sans-serif; font-size: 0.95rem; color: #a0a0c0; margin: 0 0 20px 0; line-height: 1.6; } .ds-card-tags { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; } .ds-chip { background: rgba(59,130,246,0.1); color: #3b82f6; padding: 5px 12px; border-radius: 20px; font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; } .ds-card-links { display: flex; gap: 15px; } .ds-card-link { color: #a0a0c0; transition: color 0.3s ease; } .ds-card-link:hover { color: #fff; }"
+    },
+    {
+      "name": "Skills Tab",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "Tab bar for switching between Frontend/Backend/Tools skill categories.",
+      "html": "<div class=\"ds-tab-bar\"><button class=\"ds-tab ds-tab--active\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/></svg> Frontend</button><button class=\"ds-tab\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"/><rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"/></svg> Backend</button><button class=\"ds-tab\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42\"/></svg> Tools</button></div>",
+      "css": ".ds-tab-bar { display: flex; gap: 15px; margin-bottom: 40px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 12px; width: fit-content; } .ds-tab { display: flex; align-items: center; gap: 8px; padding: 10px 24px; border: none; background: transparent; color: #a0a0c0; border-radius: 8px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease; } .ds-tab:hover { color: #fff; } .ds-tab--active { background: #3b82f6; color: #fff; box-shadow: 0 4px 15px rgba(59,130,246,0.3); } .ds-tab:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Skill Bar",
+      "kind": "custom",
+      "refersTo": "skill-bar-fill",
+      "description": "Animated skill proficiency bar with label.",
+      "html": "<div class=\"ds-skill\"><div class=\"ds-skill-header\"><span class=\"ds-skill-name\">JavaScript</span></div><div class=\"ds-skill-bar\"><div class=\"ds-skill-fill\" style=\"width:85%\"></div></div></div>",
+      "css": ".ds-skill { display: flex; flex-direction: column; gap: 4px; } .ds-skill-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; } .ds-skill-name { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.1rem; color: #fff; } .ds-skill-bar { width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; } .ds-skill-fill { height: 100%; background: linear-gradient(to right, #3b82f6, #22d3ee); border-radius: 10px; transition: width 1s ease-in-out; }"
+    },
+    {
+      "name": "Loader",
+      "kind": "custom",
+      "refersTo": "button-primary",
+      "description": "Full-screen loading spinner shown on page load.",
+      "html": "<div class=\"ds-loader\"><div class=\"ds-loader-ring\"></div><div class=\"ds-loader-text\">Loading...</div></div>",
+      "css": ".ds-loader { position: fixed; inset: 0; background: #0b0721; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9999; } .ds-loader-ring { width: 70px; height: 70px; position: relative; } .ds-loader-ring::before { content: ''; width: 70px; height: 70px; border-radius: 50%; border: 6px solid #3b82f6; position: absolute; animation: ds-pulse 1s ease-in-out infinite; } .ds-loader-ring::after { content: ''; width: 70px; height: 70px; border-radius: 50%; border: 6px solid transparent; border-top-color: #3b82f6; position: absolute; animation: ds-spin 2s linear infinite; } .ds-loader-text { font-family: 'Inter', sans-serif; font-size: 18px; margin-top: 20px; color: #3b82f6; text-transform: uppercase; letter-spacing: 2px; } @keyframes ds-pulse { 0% { transform: scale(0.6); opacity: 1; } 50% { transform: scale(1.2); opacity: 0; } 100% { transform: scale(0.6); opacity: 1; } } @keyframes ds-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Deep Space Terminal",
+    "overview": "This is a portfolio that reads like a terminal session against a deep-space backdrop — precise, luminous, and unmistakably technical. The visual language pairs a near-black indigo void with neon accent strikes (blue, cyan, yellow, green), treating light as a scarce, deliberate resource. Every glowing element earns its brightness.\n\nThe layout is split by a persistent sidebar command palette (navigation) and a main content bay. Cards float above the void with subtle borders and background shifts rather than shadows — depth comes from tonal layering, not CSS box-shadows. The laptop animation on the hero doubles as both decoration and a statement of craft: this is someone who builds things.",
+    "keyCharacteristics": [
+      "Deep indigo-black backgrounds with purple-tinged surface layers",
+      "Neon accent palette used sparingly for interactivity and emphasis",
+      "Sidebar-as-command-palette navigation model",
+      "Tonal layering, not shadow-based depth",
+      "Scroll-reveal as the single authored motion moment",
+      "Gradient text reserved for the single hero headline claim (\"Software Developer\")"
+    ],
+    "rules": [
+      { "name": "The Signal Rule", "body": "The four accent colors (blue, cyan, yellow, green) always appear together in gradients or alone as solid fills. They never mix as two solids on the same surface without being bridged by a gradient — the palette treats them as a single multicolored instrument.", "section": "colors" },
+      { "name": "The Only-Gradient Rule", "body": "Gradient text is used exactly once — on the headline claim \"Software Developer\" in the hero. No other text receives a gradient treatment.", "section": "colors" },
+      { "name": "The Weight Hierarchy Rule", "body": "Hierarchy is achieved through font-weight steps (400 → 700 → 800 → 900) before size changes. Never skip a weight step between nested content.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces at rest have no shadow. Elevation is communicated exclusively through background lightness shifts and border presence.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use Neon Blue as the single interactive anchor — primary buttons, active nav, active tabs, loading indicators.",
+      "Do use tonal layering (brighter indigos for closer surfaces) instead of box-shadows for depth.",
+      "Do keep gradient text restricted to the hero headline — it is the one decorative flourish in an otherwise restrained system.",
+      "Do let the laptop animation play through on page load — it is the system's single authored motion moment.",
+      "Do use the full four-color gradient (blue → cyan → green → yellow) as a unified instrument, never split across disconnected elements."
+    ],
+    "donts": [
+      "Don't add box-shadows to cards or surfaces at rest. Elevation comes from background color, not shadows.",
+      "Don't use more than one gradient text treatment per page. The hero claim earns the only one.",
+      "Don't place two solid accent colors on the same surface without a gradient bridge — they belong together as a sweep.",
+      "Don't add new entrance animations. The single scroll-reveal (opacity + translateY) is the vocabulary.",
+      "Don't introduce a second font family. Inter carries the full hierarchy through weight alone."
+    ]
+  }
+}
